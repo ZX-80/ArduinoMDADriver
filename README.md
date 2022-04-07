@@ -12,7 +12,7 @@ This is a modified version of [Christophe Diericxs CGA library](https://github.c
 
 MDA uses a pixel clock of 16.257 MHz, but due to the Arduino Uno's comparatively slow speed of 16 MHz, it can only generate a monochrome image with a resolution of 104x115. The MDA standard technically supports a 2-bit grayscale image with a resolution of 720x350 (though not all monitors will support that).
 
-In future I'd like to use more powerful microcontrollers such as the Teensy 4.0/1 (600 MHz) or Raspberry Pi Pico (133 MHz). Combined with serial input, it could allow for a Hercules Graphics Card clone built solely from a microcontroller or two.
+In future I'd like to use a more powerful microcontroller such as the Raspberry Pi Pico. Having two cores, one handling serial IO, and the other handling video generation using the PIOs, could allow for a Hercules Graphics Card clone built solely from a single microcontroller.
 
 # Wiring the MDA Connector
 
